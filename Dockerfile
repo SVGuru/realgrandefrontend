@@ -1,4 +1,3 @@
-//create Dockerfile in Github
 FROM node
 WORKDIR /app
 COPY . /app

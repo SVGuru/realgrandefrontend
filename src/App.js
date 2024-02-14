@@ -37,10 +37,17 @@ function App() {
    
     let fetchData = async() =>{
 
+<<<<<<< HEAD
      // USING BACK END Server, for Integration, next 2 lines
      //let response = await axios.get("http://localhost:4000/houses");
      //using the next line, changed 2.12.2024
      let response = await axios.get(process.env.REACT_APP_BACKEND_URL+"houses");
+=======
+      // USING BACK END Server, for Integration, next 2 lines
+      //let response = await axios.get("http://localhost:4000/houses");
+      //change,  2.12.2024, when working on Docker
+      let response = await axios.get(process.env.REACT_APP_BACKEND_URL+"houses");
+>>>>>>> 6c07bc4193d5ee33cee3d04ce55e0c45c7abb05b
      console.log(response);
 
      setHouseData(response.data);
