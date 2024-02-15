@@ -8,7 +8,8 @@ const Enquiries = () => {
     useEffect( () =>{
         let fetchData = async () => {
             try{
-                let response = await axios.get("http://localhost:4000/enquiries")
+                //let response = await axios.get("http://localhost:4000/enquiries")
+                let response = await axios.get(process.env.REACT_APP_BACKEND_URL+"enquiries")
                 let data = await response.data;
                 setAllEnquiries(data);
                 console.log(allEnquiries);
